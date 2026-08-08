@@ -1,0 +1,10 @@
+CREATE DATABASE n08_08;
+USE n08_08;
+
+	CREATE TABLE students (
+		student_code VARCHAR(20) PRIMARY KEY,
+		full_name VARCHAR(50) NOT NULL,
+		email VARCHAR(100) NOT NULL UNIQUE,
+		age INT NOT NULL,
+		is_active BOOLEAN DEFAULT TRUE
+	);
